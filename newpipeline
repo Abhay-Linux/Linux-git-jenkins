@@ -15,12 +15,12 @@ pipeline {
         } 
         stage('Build'){
              steps{
-                  sh 'mav clean package'                                                      
+                sh 'mav clean package'                                                      
              }   
-            
+        }   
         stage('Test')
             steps{
-                  sh 'mvn test'
+                sh 'mvn test'
             }
         }
         post{
@@ -29,10 +29,11 @@ pipeline {
             }
         }
     }                        
-        stage('Deploy'){
-            steps{
-                //Transfer the jar to remote server
-                sh 'echo Deployed'
+     stage('Deploy'){
+        steps{
+            //Transfer the jar to remote server
+            sh 'echo Deployed'
             }    
         }      
     }    
+}
