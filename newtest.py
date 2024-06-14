@@ -1,1 +1,1 @@
-print("Wassup Abhay❤️ mahakk v7!")
+print("Wassup Abhay v21! mahakk v7!")
